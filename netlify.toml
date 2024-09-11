@@ -1,16 +1,14 @@
 [build]
   # Specify the directory where your build command will output the production-ready files
-  publish = "build" # For React, this is usually "build" or "dist" depending on your framework
-  command = "npm run build" # or "yarn build" if you use Yarn
+  publish = "build"  # For React, this is usually "build"
+  command = "npm run build"  # or "yarn build" if you use Yarn
 
+[environment]
   # Optionally, specify Node.js version
-  environment = { NODE_VERSION = "16.x" }
+  NODE_VERSION = "16.20.0"
 
-# Redirect settings
+# Redirect settings for Single Page Applications (SPA)
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-
-  [build.environment]
-  NODE_VERSION = "16.20.0"
