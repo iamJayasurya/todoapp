@@ -1,0 +1,48 @@
+
+.card{
+    margin-top: 30px;
+    background-color: #ffff;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 5px 0px 8px rgba(0, 0, 0, 0.726);
+    /* box-shadow: 3px 3px 5px 3px rgb(37, 37, 37); */
+    width: 250px;
+    max-width: 400px;
+    padding: 10px;
+}
+ .card-title{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+ }
+.card-description{
+    border: 1px solid gold;
+    height: 100px;
+    padding: 10px;
+}
+.button-group{
+    width: max-content;
+    padding: 5px;
+}
+ a{
+    padding: 5px;
+    border-radius: 50%;
+    margin: 5px;
+}
+.completed{
+    color: green;
+    
+}
+.completed:hover{
+    background-color: green;
+    color: white;
+    transition-duration: 0.5s;
+}
+.delete{
+    color: red;
+}
+.delete:hover{
+  background-color: rgb(221, 17, 17);
+  color: white;
+  transition-duration: 0.5s;
+}
