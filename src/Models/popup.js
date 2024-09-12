@@ -4,7 +4,7 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 const UsePopup=({modal,toggle,save})=> {
   const [title, setTitle]=useState('')
   const [description,setDescription]=useState('')
-  var currentDay;
+
 
   const handleClick=(e)=>{
     const {name,value}=e.target
