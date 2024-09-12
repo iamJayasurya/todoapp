@@ -21,7 +21,7 @@ const EditPopup = ({ modal, toggle, updateTask ,taskobj}) => {
   useEffect(() => {
     setTitle(taskobj.name);
     setDescription(taskobj.descprition); 
-  }, []);
+  }, [taskobj.descprition, taskobj.name]);
 
   const handleUpdate = () => {
     let updatedTask = {
